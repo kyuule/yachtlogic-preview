@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="logo-bar">
+    <a href="{{ .Site.Home.RelPermalink }}">
+      <img src="{{ "images/logo.gif" | relURL }}" alt="Yacht Logic" class="site-logo-img">
+    </a>
+  </div>
+  {{ partial "site-navigation.html" . }}
+  {{ if not .Params.omit_header_text }}
+  <div class="page-title-bar">
+    <div class="mw8 center ph3 ph4-ns">
+      <h1 class="page-title">{{ .Title | default .Site.Title }}</h1>
+      {{ with .Params.description }}
+        <p class="page-description">{{ . }}</p>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</header>

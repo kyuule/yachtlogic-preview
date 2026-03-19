@@ -1,0 +1,8 @@
+<header class="site-header">
+  <div class="logo-bar">
+    <a href="{{ .Site.Home.RelPermalink }}">
+      <img src="{{ "images/logo.gif" | relURL }}" alt="Yacht Logic" class="site-logo-img">
+    </a>
+  </div>
+  {{ partial "site-navigation.html" . }}
+</header>
