@@ -244,11 +244,6 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-/* Hide old GIF icons */
-.service-icon {
-  display: none;
-}
-
 .service-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
