@@ -1,7 +1,7 @@
 ---
 title: "Vessel Management"
 description: "Professional yacht management services - maintenance, refits, and operational support"
-featured_image: "/images/jada01.jpg"
+featured_image: "images/jada01.jpg"
 weight: 5
 ---
 
@@ -27,6 +27,8 @@ Vessel management requires expertise, flexibility, and technical knowledge. Yach
 - Documentation and compliance
 - Budget planning and cost management
 
+{{< figure src="images/Defever 41.JPG" alt="Defever 41 — managed vessel" >}}
+
 ### Our Approach
 
 We work with owners to develop maintenance programs that:
@@ -46,6 +48,8 @@ We have managed vessels ranging from 27 to 300 feet, including:
 - Commercial craft
 
 Our experience includes science support for ocean-going research projects for NOAA, USAP, NMFS, and MBARI — from Arctic to Antarctica.
+
+{{< figure src="images/peregrine/pere03.jpg" alt="MV Peregrine — managed expedition vessel" >}}
 
 ---
 

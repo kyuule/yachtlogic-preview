@@ -1,11 +1,13 @@
 ---
 title: "Charter — MV Peregrine"
 description: "Expedition yacht charters in the Pacific Northwest, Inside Passage, and Alaska"
-featured_image: "/images/P6290078.JPG"
+featured_image: "images/P6290078.JPG"
 weight: 4
 ---
 
 ## An Ultimate Adventure You Will Never Forget
+
+{{< figure src="images/peregrine/pere01.jpg" alt="MV Peregrine expedition yacht" >}}
 
 **The Expedition Yacht Peregrine** — explore the beauty and maritime history of the Pacific Northwest.
 
@@ -32,9 +34,9 @@ The Peregrine was designed and built specifically to operate in remote areas —
 
 Available for **crewed bareboat charters** — experience the freedom of yacht cruising with professional support available.
 
-{{< figure src="/images/P4010170.JPG" alt="MV Peregrine expedition yacht" >}}
+{{< figure src="images/peregrine/pere05.jpg" alt="MV Peregrine on the water" >}}
 
-{{< figure src="/images/Orion1.jpg" alt="Expedition cruising scenery" >}}
+{{< figure src="images/CABO_ARCH_BEST_SHOT.jpg" alt="Cabo San Lucas arch — a charter destination" >}}
 
 ### What to Expect
 

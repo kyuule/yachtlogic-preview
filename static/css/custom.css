@@ -1,20 +1,21 @@
 /* ============================================
    YACHT LOGIC - Maritime Design System
-   Professional Yacht Services - San Diego
+   Original branding: sage/olive green + navy
    ============================================ */
 
-/* === Color Palette Variables === */
+/* === Color Palette === */
 :root {
-  --navy: #0d2137;
-  --navy-dark: #081524;
-  --navy-light: #1a3a5c;
-  --gold: #c8a84b;
-  --gold-light: #d4b85c;
-  --gold-dark: #a08030;
+  --sage: #8a9068;
+  --sage-light: #9ca87a;
+  --sage-dark: #727856;
+  --navy: #1a2a4a;
+  --navy-dark: #0f1d33;
+  --navy-light: #2a3e62;
   --white: #ffffff;
-  --light-gray: #f4f6f8;
+  --off-white: #f7f8f5;
+  --light-gray: #f0f1ec;
   --mid-gray: #5a6a7a;
-  --text-gray: #333;
+  --text-dark: #1a2a4a;
 }
 
 /* === Base === */
@@ -23,15 +24,19 @@ html, body {
   max-width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* === Typography === */
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  color: var(--text-gray);
+  color: var(--text-dark);
   line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-weight: 600;
   color: var(--navy);
 }
@@ -39,88 +44,35 @@ h1, h2, h3, h4, h5, h6 {
 /* Tachyons color overrides */
 .navy { color: var(--navy) !important; }
 .bg-navy { background-color: var(--navy) !important; }
-.gold { color: var(--gold) !important; }
 .bg-light-gray { background-color: var(--light-gray) !important; }
 
 /* ============================================
-   HERO SECTION
+   LOGO BAR
    ============================================ */
-.hero-section {
-  position: relative;
-  background-size: cover !important;
-  background-position: center center !important;
-  min-height: 460px;
+.logo-bar {
+  background-color: var(--sage);
+  text-align: center;
+  padding: 0;
 }
 
-.hero-overlay {
-  background: linear-gradient(
-    to bottom,
-    rgba(13, 33, 55, 0.75) 0%,
-    rgba(13, 33, 55, 0.65) 50%,
-    rgba(13, 33, 55, 0.75) 100%
-  );
-  min-height: 460px;
-  display: flex;
-  flex-direction: column;
+.logo-bar a {
+  display: block;
+  line-height: 0;
 }
 
-.hero-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-title {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-shadow: 3px 3px 12px rgba(0,0,0,0.5);
-  margin-bottom: 0;
-}
-
-.hero-subtitle {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
-  margin-top: 1rem;
-}
-
-.hero-tagline {
-  font-size: 1.1rem;
-  font-weight: 300;
-  letter-spacing: 0.05em;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-  opacity: 0.9;
-}
-
-.hero-cta {
-  background-color: var(--gold);
-  color: var(--navy-dark);
-  border-radius: 4px;
-  letter-spacing: 0.05em;
-  font-weight: 700;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
-
-.hero-cta:hover {
-  background-color: var(--gold-light);
-  color: var(--navy-dark);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+.site-logo-img {
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /* ============================================
    NAVIGATION
    ============================================ */
 .site-nav {
-  background-color: rgba(13, 33, 55, 0.95);
-  backdrop-filter: blur(8px);
-  border-bottom: 2px solid var(--gold);
+  background-color: var(--navy);
   position: relative;
   z-index: 100;
 }
@@ -130,23 +82,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 1rem;
-}
-
-.site-logo {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  font-size: 1rem;
-  color: white;
-  transition: color 0.2s ease;
-  padding: 0.75rem 0;
-  flex-shrink: 0;
-}
-
-.site-logo:hover {
-  color: var(--gold) !important;
 }
 
 /* Hamburger button */
@@ -161,6 +98,10 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   padding: 0;
   flex-shrink: 0;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .nav-toggle span {
@@ -183,28 +124,28 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   gap: 0;
-  border-left: 1px solid rgba(255,255,255,0.2);
-  padding-left: 1rem;
 }
 
 .menu-link {
   position: relative;
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   transition: color 0.2s ease;
-  letter-spacing: 0.04em;
-  font-size: 0.72rem;
-  padding: 0.5rem 0.6rem;
+  letter-spacing: 0.03em;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.85rem 0.75rem;
   display: block;
   white-space: nowrap;
+  text-transform: uppercase;
 }
 
 .menu-link:hover {
-  color: var(--gold) !important;
+  color: var(--sage-light) !important;
 }
 
 .menu-link[aria-current="page"] {
-  color: var(--gold) !important;
+  color: var(--white) !important;
 }
 
 .menu-link[aria-current="page"]::after {
@@ -213,105 +154,179 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 20px;
-  height: 2px;
-  background-color: var(--gold);
+  width: 100%;
+  height: 3px;
+  background-color: var(--sage);
 }
 
-/* Nav-only header (no featured image) */
-.nav-only {
-  background-color: var(--navy);
-  min-height: 60px;
-  padding: 0;
+/* ============================================
+   HERO SECTION (Homepage)
+   ============================================ */
+.hero-section {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  min-height: 350px;
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 42, 74, 0.7) 0%,
+    rgba(26, 42, 74, 0.6) 50%,
+    rgba(26, 42, 74, 0.7) 100%
+  );
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.hero-tagline {
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  margin: 0 0 2rem 0;
+}
+
+.hero-cta {
+  display: inline-block;
+  background-color: var(--sage);
+  color: var(--white);
+  padding: 0.75rem 2rem;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: background-color 0.3s ease;
+}
+
+.hero-cta:hover {
+  background-color: var(--sage-dark);
+  color: var(--white);
+}
+
+/* ============================================
+   PAGE TITLE BAR (Interior pages)
+   ============================================ */
+.page-title-bar {
+  background-color: var(--sage);
+  padding: 1.5rem 0;
+}
+
+.page-title {
+  color: var(--white);
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.page-description {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1rem;
+  margin: 0.5rem 0 0 0;
 }
 
 /* ============================================
    HOMEPAGE SECTIONS
    ============================================ */
 
-/* Section Title Styling */
+/* Intro section */
+.intro-section {
+  padding: 3rem 0;
+  background-color: var(--white);
+}
+
 .section-title {
-  font-family: Georgia, 'Times New Roman', serif;
   position: relative;
   display: inline-block;
-  overflow: visible;
   padding-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
 
 .section-title::after {
   content: '';
   position: absolute;
-  bottom: -10px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;
+  width: 50px;
   height: 3px;
-  background-color: var(--gold);
-}
-
-.intro-section .section-title::after,
-.services-section .section-title::after {
-  display: block;
+  background-color: var(--sage);
 }
 
 .section-intro {
   max-width: 700px;
+  margin: 0 auto;
+  color: var(--mid-gray);
+  font-size: 1.05rem;
+  line-height: 1.75;
 }
 
 /* ============================================
    SERVICE CARDS
    ============================================ */
+.services-section {
+  padding: 3rem 0;
+  background-color: var(--light-gray);
+}
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
-}
-
-@media (max-width: 768px) {
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (min-width: 1024px) {
-  .services-grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-  }
+  margin-top: 2rem;
 }
 
 .service-card {
-  border: 1px solid rgba(13, 33, 55, 0.1);
-  border-top: 3px solid var(--gold);
-  border-radius: 4px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
-  text-align: center;
+  background: var(--white);
+  padding: 1.75rem;
+  border: 1px solid rgba(138, 144, 104, 0.2);
+  border-left: 4px solid var(--sage);
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
 }
 
 .service-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-  border-color: var(--gold);
-}
-
-.service-icon {
-  display: none !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
 .service-title {
-  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--navy);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem 0;
+}
+
+.service-desc {
+  color: var(--mid-gray);
+  font-size: 0.9rem;
+  line-height: 1.65;
+  margin: 0 0 1rem 0;
 }
 
 .service-link {
   display: inline-block;
-  padding: 0.5rem 0;
-  border-bottom: 2px solid transparent;
-  transition: all 0.2s ease;
+  color: var(--navy);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  border-bottom: 2px solid var(--sage);
+  padding-bottom: 2px;
+  transition: color 0.2s ease;
 }
 
 .service-link:hover {
-  border-bottom-color: var(--gold);
+  color: var(--sage-dark);
 }
 
 /* ============================================
@@ -319,27 +334,53 @@ h1, h2, h3, h4, h5, h6 {
    ============================================ */
 .contact-cta-section {
   background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
+  padding: 3.5rem 0;
+}
+
+.cta-heading {
+  color: var(--white);
+  font-size: 1.75rem;
+  margin: 0 0 1rem 0;
+}
+
+.cta-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.05rem;
+  margin: 0 0 1.5rem 0;
+}
+
+.cta-contact-info {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.5rem;
+}
+
+.cta-contact-info p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
 }
 
 .cta-button {
-  background-color: var(--gold);
-  color: var(--navy-dark);
-  font-weight: 700;
+  display: inline-block;
+  background-color: var(--sage);
+  color: var(--white);
+  padding: 0.75rem 2rem;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  transition: all 0.3s ease;
+  letter-spacing: 0.08em;
+  transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: var(--white);
-  color: var(--navy);
+  background-color: var(--sage-light);
+  color: var(--white);
 }
 
 /* ============================================
-   INTERIOR PAGES
+   INTERIOR PAGE CONTENT
    ============================================ */
-
-/* Article content styling */
 article.cf {
   max-width: 800px;
 }
@@ -352,7 +393,7 @@ article h2, article h3 {
 
 article h2 {
   font-size: 1.75rem;
-  border-bottom: 2px solid var(--gold);
+  border-bottom: 2px solid var(--sage);
   padding-bottom: 0.5rem;
 }
 
@@ -366,59 +407,71 @@ article p {
 }
 
 article a {
-  color: var(--navy-light);
+  color: var(--navy);
   text-decoration: underline;
-  text-decoration-color: var(--gold);
+  text-decoration-color: var(--sage);
   text-underline-offset: 3px;
 }
 
 article a:hover {
-  color: var(--gold-dark);
+  color: var(--sage-dark);
 }
 
 article img {
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* ============================================
    FOOTER
    ============================================ */
-footer {
-  background-color: var(--navy-dark) !important;
-  color: #ccc;
+.site-footer {
+  background-color: var(--navy-dark);
+  color: rgba(255, 255, 255, 0.8);
   padding: 2rem 0;
 }
 
-footer a {
-  color: var(--gold);
+.footer-address {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-contact {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-contact a {
+  color: var(--sage-light);
+  text-decoration: none;
   transition: color 0.2s ease;
 }
 
-footer a:hover {
-  color: var(--gold-light);
+.footer-contact a:hover {
+  color: var(--white);
+}
+
+.footer-copy {
+  margin: 0;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /* ============================================
-   RESPONSIVE ADJUSTMENTS
+   RESPONSIVE
    ============================================ */
 @media (max-width: 768px) {
   .hero-section,
   .hero-overlay {
-    min-height: 380px;
-  }
-
-  .hero-title {
-    font-size: 2rem;
-    letter-spacing: 0.08em;
-  }
-
-  .hero-subtitle {
-    font-size: 1.1rem;
+    min-height: 280px;
   }
 
   .hero-tagline {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
   }
 
   /* Hamburger visible on mobile */
@@ -426,7 +479,13 @@ footer a:hover {
     display: flex;
   }
 
-  /* Menu hidden by default on mobile, shown when .open */
+  .nav-container {
+    justify-content: flex-start;
+    position: relative;
+    min-height: 44px;
+  }
+
+  /* Menu hidden by default on mobile */
   .main-menu {
     display: none;
     flex-direction: column;
@@ -434,9 +493,8 @@ footer a:hover {
     top: 100%;
     left: 0;
     right: 0;
-    background-color: rgba(13, 33, 55, 0.98);
-    border-top: 1px solid rgba(255,255,255,0.1);
-    border-left: none;
+    background-color: var(--navy);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 0.5rem 0;
     z-index: 200;
   }
@@ -451,50 +509,46 @@ footer a:hover {
 
   .menu-link {
     padding: 0.75rem 1.5rem;
-    font-size: 0.9rem;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-    white-space: normal;
+    font-size: 0.85rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .page-title {
+    font-size: 1.4rem;
   }
 
   .section-title {
-    font-size: 1.5rem;
-  }
-
-  .section-title::after {
-    width: 40px;
+    font-size: 1.3rem;
   }
 }
 
 @media (max-width: 480px) {
-  .hero-title {
-    font-size: 2rem;
+  .service-card {
+    padding: 1.25rem;
   }
 
-  .service-card {
-    padding: 1.5rem;
+  .hero-tagline {
+    font-size: 1.1rem;
   }
 }
 
 /* ============================================
-   UTILITY CLASSES
+   ACCESSIBILITY
    ============================================ */
-.tracked-tight {
-  letter-spacing: 0.05em;
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Focus styles for accessibility */
 a:focus,
 button:focus {
-  outline: 2px solid var(--gold);
+  outline: 2px solid var(--sage);
   outline-offset: 2px;
 }
 
 /* Remove default list styling in nav */
 .main-menu {
   list-style: none;
+}
+
+/* Nav-only fallback for Ananke theme */
+.nav-only {
+  background-color: var(--navy);
+  min-height: 0;
+  padding: 0;
 }

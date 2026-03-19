@@ -1,7 +1,7 @@
 ---
 title: "Yacht Delivery"
 description: "Professional yacht delivery service - power and sailing yachts delivered worldwide"
-featured_image: "/images/del10.jpg"
+featured_image: "images/del10.jpg"
 weight: 2
 ---
 
@@ -10,6 +10,8 @@ weight: 2
 The Yacht Logic team provides the best in yacht delivery service. Professional captains and crew experienced in transporting both power and sailing yachts worldwide. **Comprehensive, prompt and safe.**
 
 ### What Sets Us Apart
+
+{{< figure src="images/del10.jpg" alt="Yacht delivery underway" >}}
 
 Owner receives a comprehensive report constructed from notes taken while underway — very helpful to new and used boat owners. **The delivery survey is free**, no additional cost to the owner, it is part of the delivery fee.
 
@@ -23,6 +25,8 @@ Owner receives a comprehensive report constructed from notes taken while underwa
 - Get personalized instruction from experienced captains
 
 ### Our Experience
+
+{{< figure src="images/past/del01_lg.jpg" alt="Professional yacht delivery" >}}
 
 Over the past decade, Yacht Logic has become one of the top yacht delivery companies in the USA. We have delivered vessels ranging from 27 to 300 feet, including:
 
@@ -42,9 +46,9 @@ We regularly deliver yachts on routes including:
 - Trans-Atlantic
 - Panama Canal transits
 
-{{< figure src="/images/Californian 55 delivery.JPG" alt="Californian 55 yacht delivery" >}}
+{{< figure src="images/Californian 55 delivery.JPG" alt="Californian 55 yacht delivery" >}}
 
-{{< figure src="/images/Defever 41.JPG" alt="Defever 41 delivery" >}}
+{{< figure src="images/pilotboats.jpg" alt="Pilot boats" >}}
 
 ---
 

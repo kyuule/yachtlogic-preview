@@ -1,31 +1,18 @@
-{{ $featured_image := partial "func/GetFeaturedImage.html" . }}
-{{ if $featured_image }}
-  <header class="hero-section cover bg-center" style="background-image: url('{{ $featured_image }}');">
-    <div class="hero-overlay">
-      {{ partial "site-navigation.html" . }}
-      <div class="hero-content tc pv5 pv6-l ph3 ph4-ns">
-        {{ if not .Params.omit_header_text }}
-          {{ if .IsHome }}
-            {{/* Homepage Hero - Large with CTA */}}
-            <h1 class="hero-title f1 f-subheadline-l fw7 white mb0 lh-solid tracked-tight">YACHT LOGIC</h1>
-            <p class="hero-subtitle f4 f3-l white-90 mt3 mb2 lh-copy">Professional Maritime Services Since 1996</p>
-            <p class="hero-tagline f5 f4-l white-80 mt2 mb4 lh-copy">Yacht delivery — Captain services — Charter — Vessel management</p>
-            <a href="/contact/" class="hero-cta dib f5 fw6 ph4 pv3 no-underline mt3">Request a Quote</a>
-          {{ else }}
-            {{/* Interior page hero - Smaller */}}
-            <h1 class="f2 f1-l fw6 white-90 mb0 lh-title tracked">{{ .Title | default .Site.Title }}</h1>
-            {{ with .Params.description }}
-              <h2 class="fw3 f5 f4-l white-80 measure-wide-l center lh-copy mt3 mb4">{{ . }}</h2>
-            {{ end }}
-          {{ end }}
-        {{ end }}
-      </div>
+<header class="site-header">
+  <div class="logo-bar">
+    <a href="{{ .Site.Home.RelPermalink }}">
+      <img src="{{ "images/logo.gif" | relURL }}" alt="Yacht Logic" class="site-logo-img">
+    </a>
+  </div>
+  {{ partial "site-navigation.html" . }}
+  {{ if not .Params.omit_header_text }}
+  <div class="page-title-bar">
+    <div class="mw8 center ph3 ph4-ns">
+      <h1 class="page-title">{{ .Title | default .Site.Title }}</h1>
+      {{ with .Params.description }}
+        <p class="page-description">{{ . }}</p>
+      {{ end }}
     </div>
-  </header>
-{{ else }}
-  <header>
-    <div class="nav-only {{ .Site.Params.background_color_class | default "bg-navy" }}">
-      {{ partial "site-navigation.html" . }}
-    </div>
-  </header>
-{{ end }}
+  </div>
+  {{ end }}
+</header>

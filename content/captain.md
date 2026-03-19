@@ -1,11 +1,13 @@
 ---
 title: "Professional Captain Service"
 description: "Licensed professional captains for short or long term hire - cruising, instruction, and expedition support"
-featured_image: "/images/Captkelly.jpg"
+featured_image: "images/Captkelly.jpg"
 weight: 3
 ---
 
 ## Professional Captain Service
+
+{{< figure src="images/adam.jpg" alt="Adam Jenkins — Professional Captain" >}}
 
 The Yacht Logic team provides professional captain service for the short or long term. All captains are licensed Masters with extensive experience in diverse cruising grounds.
 
@@ -45,7 +47,9 @@ Our captains can serve as:
 
 All captains hold USCG licenses and appropriate endorsements for the vessels they operate.
 
-{{< figure src="/images/adamice.jpg" alt="Captain in Antarctic waters" >}}
+{{< figure src="images/past/capt_acoustic_lg.jpg" alt="Captain aboard research vessel" >}}
+
+{{< figure src="images/yachtstern.jpg" alt="Yacht stern view" >}}
 
 ---
 
