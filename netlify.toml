@@ -1,0 +1,56 @@
+[build]
+  command = "hugo"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.124.1"
+
+[[redirects]]
+  from = "/html/delivery.html"
+  to = "/delivery/"
+  status = 301
+
+[[redirects]]
+  from = "/html/procapt.html"
+  to = "/captain/"
+  status = 301
+
+[[redirects]]
+  from = "/html/charter.html"
+  to = "/charter/"
+  status = 301
+
+[[redirects]]
+  from = "/html/manage.html"
+  to = "/management/"
+  status = 301
+
+[[redirects]]
+  from = "/html/about.html"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/html/pastproj.html"
+  to = "/projects/"
+  status = 301
+
+[[redirects]]
+  from = "/html/gallery.html"
+  to = "/gallery/"
+  status = 301
+
+[[redirects]]
+  from = "/html/links.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/html/contact.html"
+  to = "/contact/"
+  status = 301
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301

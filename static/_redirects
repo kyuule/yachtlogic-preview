@@ -1,0 +1,21 @@
+# Redirect legacy Dreamweaver URLs to new Hugo structure
+/html/delivery.html    /delivery/    301
+/html/procapt.html     /captain/     301
+/html/charter.html     /charter/     301
+/html/manage.html      /management/  301
+/html/about.html       /about/       301
+/html/pastproj.html    /projects/    301
+/html/gallery.html     /gallery/     301
+/html/links.html       /             301
+/html/contact.html     /contact/     301
+/index.html            /             301
+
+# Handle any stray .html extensions
+/delivery.html         /delivery/    301
+/captain.html          /captain/     301
+/charter.html          /charter/     301
+/management.html       /management/  301
+/about.html            /about/       301
+/projects.html         /projects/    301
+/gallery.html          /gallery/     301
+/contact.html          /contact/     301

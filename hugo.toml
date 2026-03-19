@@ -1,0 +1,69 @@
+baseURL = "https://yachtlogic.com/"
+languageCode = "en-us"
+title = "Yacht Logic"
+theme = "ananke"
+
+[params]
+  description = "Professional yacht delivery, captain services, charter expeditions and vessel management since 1996."
+  featured_image = "/images/front_top.gif"
+  site_logo = "/images/logo.gif"
+  favicon = "/images/logo.gif"
+  body_classes = "avenir bg-near-white"
+  show_reading_time = false
+
+  # Contact info
+  contact_email = "adam@yachtlogic.com"
+  contact_phone = "619-405-5558"
+  contact_address = "5655 Riley Street #201, San Diego, CA 92110"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "delivery"
+    name = "Delivery"
+    url = "/delivery/"
+    weight = 2
+  [[menu.main]]
+    identifier = "captain"
+    name = "Captain"
+    url = "/captain/"
+    weight = 3
+  [[menu.main]]
+    identifier = "charter"
+    name = "Charter"
+    url = "/charter/"
+    weight = 4
+  [[menu.main]]
+    identifier = "management"
+    name = "Management"
+    url = "/management/"
+    weight = 5
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 6
+  [[menu.main]]
+    identifier = "gallery"
+    name = "Gallery"
+    url = "/gallery/"
+    weight = 7
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 8
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 9
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
