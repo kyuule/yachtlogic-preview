@@ -1,0 +1,80 @@
+backend:
+  name: test-repo
+
+# Media files will be stored in the repo under static/images
+media_folder: "static/images"
+public_folder: "images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Home Page"
+        file: "content/_index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - name: "delivery"
+        label: "Delivery"
+        file: "content/delivery.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - name: "captain"
+        label: "Captain Services"
+        file: "content/captain.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - name: "charter"
+        label: "Charter"
+        file: "content/charter.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - name: "management"
+        label: "Management"
+        file: "content/management.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - name: "about"
+        label: "About"
+        file: "content/about.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - name: "projects"
+        label: "Past Projects"
+        file: "content/projects.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - name: "contact"
+        label: "Contact"
+        file: "content/contact.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown" }
