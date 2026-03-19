@@ -1,0 +1,439 @@
+/* ============================================
+   YACHT LOGIC - Maritime Design System
+   Professional Yacht Services - San Diego
+   ============================================ */
+
+/* === Color Palette Variables === */
+:root {
+  --navy: #0d2137;
+  --navy-dark: #081524;
+  --navy-light: #1a3a5c;
+  --gold: #c8a84b;
+  --gold-light: #d4b85c;
+  --gold-dark: #a08030;
+  --white: #ffffff;
+  --light-gray: #f4f6f8;
+  --mid-gray: #5a6a7a;
+  --text-gray: #333;
+}
+
+/* === Typography === */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+/* Tachyons color overrides */
+.navy { color: var(--navy) !important; }
+.bg-navy { background-color: var(--navy) !important; }
+.gold { color: var(--gold) !important; }
+.bg-light-gray { background-color: var(--light-gray) !important; }
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+.hero-section {
+  position: relative;
+  background-size: cover !important;
+  background-position: center center !important;
+  min-height: 520px;
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(13, 33, 55, 0.75) 0%,
+    rgba(13, 33, 55, 0.65) 50%,
+    rgba(13, 33, 55, 0.75) 100%
+  );
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-shadow: 3px 3px 12px rgba(0,0,0,0.5);
+  margin-bottom: 0;
+}
+
+.hero-subtitle {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  margin-top: 1rem;
+}
+
+.hero-tagline {
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  opacity: 0.9;
+}
+
+.hero-cta {
+  background-color: var(--gold);
+  color: var(--navy-dark);
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.hero-cta:hover {
+  background-color: var(--gold-light);
+  color: var(--navy-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+.site-nav {
+  background-color: rgba(13, 33, 55, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav-container {
+  max-width: 1200px;
+}
+
+.site-logo {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  transition: color 0.2s ease;
+}
+
+.site-logo:hover,
+.hover-gold:hover {
+  color: var(--gold) !important;
+}
+
+.main-menu {
+  gap: 0;
+}
+
+.menu-link {
+  position: relative;
+  transition: color 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+.menu-link:hover {
+  color: var(--gold) !important;
+}
+
+.menu-link[aria-current="page"] {
+  color: var(--gold) !important;
+}
+
+.menu-link[aria-current="page"]::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 2px;
+  background-color: var(--gold);
+}
+
+/* Nav-only header (no featured image) */
+.nav-only {
+  background-color: var(--navy);
+}
+
+/* ============================================
+   HOMEPAGE SECTIONS
+   ============================================ */
+
+/* Section Title Styling */
+.section-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: var(--gold);
+}
+
+.intro-section .section-title::after,
+.services-section .section-title::after {
+  display: block;
+}
+
+.section-intro {
+  max-width: 700px;
+}
+
+/* ============================================
+   SERVICE CARDS
+   ============================================ */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+
+.service-card {
+  border: 1px solid rgba(13, 33, 55, 0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  border-color: var(--gold);
+}
+
+.service-icon {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-img {
+  max-height: 70px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.service-title {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.service-link {
+  display: inline-block;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.service-link:hover {
+  border-bottom-color: var(--gold);
+}
+
+/* ============================================
+   CONTACT CTA SECTION
+   ============================================ */
+.contact-cta-section {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
+}
+
+.cta-button {
+  background-color: var(--gold);
+  color: var(--navy-dark);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--white);
+  color: var(--navy);
+}
+
+/* ============================================
+   INTERIOR PAGES
+   ============================================ */
+
+/* Article content styling */
+article.cf {
+  max-width: 800px;
+}
+
+article h2, article h3 {
+  color: var(--navy);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+article h2 {
+  font-size: 1.75rem;
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 0.5rem;
+}
+
+article h3 {
+  font-size: 1.35rem;
+}
+
+article p {
+  margin-bottom: 1.25rem;
+}
+
+article a {
+  color: var(--navy-light);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 3px;
+}
+
+article a:hover {
+  color: var(--gold-dark);
+}
+
+article img {
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+  background-color: var(--navy-dark) !important;
+  color: #ccc;
+  padding: 2rem 0;
+}
+
+footer a {
+  color: var(--gold);
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: var(--gold-light);
+}
+
+/* ============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================ */
+@media (max-width: 768px) {
+  .hero-section,
+  .hero-overlay {
+    min-height: 420px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    letter-spacing: 0.1em;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-tagline {
+    font-size: 0.9rem;
+  }
+
+  .site-nav {
+    padding: 0.75rem 1rem;
+  }
+
+  .main-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0.75rem;
+  }
+
+  .menu-link {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.7rem;
+  }
+
+  .site-logo {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-container {
+    flex-direction: column;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-title::after {
+    width: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.tracked-tight {
+  letter-spacing: 0.05em;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+a:focus,
+button:focus {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* Remove default list styling in nav */
+.main-menu {
+  list-style: none;
+}
