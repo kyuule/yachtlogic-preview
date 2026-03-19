@@ -7,7 +7,7 @@ weight: 4
 
 ## An Ultimate Adventure You Will Never Forget
 
-{{< figure src="images/peregrine/pere01.jpg" alt="MV Peregrine expedition yacht" >}}
+{{< figure src="/yachtlogic-preview/images/peregrine/pere01.jpg" alt="MV Peregrine expedition yacht" >}}
 
 **The Expedition Yacht Peregrine** — explore the beauty and maritime history of the Pacific Northwest.
 
@@ -34,9 +34,9 @@ The Peregrine was designed and built specifically to operate in remote areas —
 
 Available for **crewed bareboat charters** — experience the freedom of yacht cruising with professional support available.
 
-{{< figure src="images/peregrine/pere05.jpg" alt="MV Peregrine on the water" >}}
+{{< figure src="/yachtlogic-preview/images/peregrine/pere05.jpg" alt="MV Peregrine on the water" >}}
 
-{{< figure src="images/CABO_ARCH_BEST_SHOT.jpg" alt="Cabo San Lucas arch — a charter destination" >}}
+{{< figure src="/yachtlogic-preview/images/CABO_ARCH_BEST_SHOT.jpg" alt="Cabo San Lucas arch — a charter destination" >}}
 
 ### What to Expect
 

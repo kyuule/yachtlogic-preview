@@ -29,9 +29,9 @@ Extensive yacht delivery experience spanning decades, with vessels delivered acr
 
 Vessels range from 27 to 300 feet, both sail and power.
 
-{{< figure src="images/Californian 55 delivery.JPG" alt="Californian 55 delivery" >}}
+{{< figure src="/yachtlogic-preview/images/Californian 55 delivery.JPG" alt="Californian 55 delivery" >}}
 
-{{< figure src="images/Defever 41.JPG" alt="Defever 41 delivery" >}}
+{{< figure src="/yachtlogic-preview/images/Defever 41.JPG" alt="Defever 41 delivery" >}}
 
 ---
 
@@ -45,9 +45,9 @@ Served as captain of the State University of New York's Research Vessel *Onrust*
 
 Operated survey vessels supporting NOAA research operations in Antarctic waters, conducting nearshore surveys in challenging polar conditions.
 
-{{< figure src="images/Elephant Island and Icebergs - IMG_4358 PS.jpg" alt="Elephant Island and icebergs in Antarctica" >}}
+{{< figure src="/yachtlogic-preview/images/Elephant Island and Icebergs - IMG_4358 PS.jpg" alt="Elephant Island and icebergs in Antarctica" >}}
 
-{{< figure src="images/adamice.jpg" alt="Operations in Antarctic waters" >}}
+{{< figure src="/yachtlogic-preview/images/adamice.jpg" alt="Operations in Antarctic waters" >}}
 
 ---
 

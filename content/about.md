@@ -7,7 +7,7 @@ weight: 8
 
 ## About Adam Jenkins
 
-{{< figure src="images/adam.jpg" alt="Adam Jenkins" class="fr w-40 ml3" >}}
+{{< figure src="/yachtlogic-preview/images/adam.jpg" alt="Adam Jenkins" class="fr w-40 ml3" >}}
 
 Owner — **Adam Jenkins**, age 41, began sailing as a young boy and acquired his Master Mariners license at 18 years old. He started working as a captain aboard Puget Sound and San Juan Island charter yachts.
 
@@ -48,9 +48,9 @@ Adam and his daughter Sophia live in **San Diego, California**.
 - **NOAA** certified working diver
 - **NAUI** certified Master Diver
 
-{{< figure src="images/past/supp_adam01_lg.jpg" alt="Adam Jenkins — science support operations" >}}
+{{< figure src="/yachtlogic-preview/images/past/supp_adam01_lg.jpg" alt="Adam Jenkins — science support operations" >}}
 
-{{< figure src="images/adamice.jpg" alt="Adam Jenkins in Antarctic waters" >}}
+{{< figure src="/yachtlogic-preview/images/adamice.jpg" alt="Adam Jenkins in Antarctic waters" >}}
 
 ---
 

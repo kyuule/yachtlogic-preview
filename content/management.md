@@ -27,7 +27,7 @@ Vessel management requires expertise, flexibility, and technical knowledge. Yach
 - Documentation and compliance
 - Budget planning and cost management
 
-{{< figure src="images/Defever 41.JPG" alt="Defever 41 — managed vessel" >}}
+{{< figure src="/yachtlogic-preview/images/Defever 41.JPG" alt="Defever 41 — managed vessel" >}}
 
 ### Our Approach
 
@@ -49,7 +49,7 @@ We have managed vessels ranging from 27 to 300 feet, including:
 
 Our experience includes science support for ocean-going research projects for NOAA, USAP, NMFS, and MBARI — from Arctic to Antarctica.
 
-{{< figure src="images/peregrine/pere03.jpg" alt="MV Peregrine — managed expedition vessel" >}}
+{{< figure src="/yachtlogic-preview/images/peregrine/pere03.jpg" alt="MV Peregrine — managed expedition vessel" >}}
 
 ---
 
