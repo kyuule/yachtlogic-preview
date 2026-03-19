@@ -1,0 +1,89 @@
+{{ define "main" }}
+  {{/* Intro Section */}}
+  <section class="intro-section pv4 pv5-l ph3 ph4-ns bg-white">
+    <div class="mw8 center tc">
+      <h2 class="section-title f3 f2-l fw6 navy mb3 lh-title">Professional Maritime Services Since 1996</h2>
+      <p class="section-intro f5 f4-l lh-copy mid-gray measure-wide center mb0">
+        Yacht Logic provides comprehensive maritime services including yacht delivery, professional captain services,
+        expedition charters, and vessel management. Based in San Diego, California, we have delivered and managed
+        vessels ranging from 27 to 300 feet across the globe.
+      </p>
+    </div>
+  </section>
+
+  {{/* Services Cards Section */}}
+  <section class="services-section pv4 pv5-l ph3 ph4-ns bg-light-gray">
+    <div class="mw8 center">
+      <h2 class="section-title f3 f2-l fw6 navy tc mb4 mb5-l">Our Services</h2>
+
+      <div class="services-grid">
+        {{/* Yacht Delivery Card */}}
+        <article class="service-card bg-white pa4 br3">
+          <div class="service-icon mb3">
+            <img src="/images/link_delivery.gif" alt="Yacht Delivery" class="service-img">
+          </div>
+          <h3 class="service-title f4 fw6 navy mb2">Yacht Delivery</h3>
+          <p class="service-desc f6 lh-copy mid-gray mb3">
+            Professional captains and crew experienced in transporting power and sailing yachts worldwide.
+            Safe delivery with detailed vessel reports.
+          </p>
+          <a href="/delivery/" class="service-link f6 fw6 gold no-underline">Learn More &rarr;</a>
+        </article>
+
+        {{/* Professional Captain Card */}}
+        <article class="service-card bg-white pa4 br3">
+          <div class="service-icon mb3">
+            <img src="/images/link_captain.gif" alt="Professional Captain" class="service-img">
+          </div>
+          <h3 class="service-title f4 fw6 navy mb2">Professional Captain</h3>
+          <p class="service-desc f6 lh-copy mid-gray mb3">
+            Licensed Masters available for short or long term captain service.
+            Experienced in charter cruising from the Caribbean to Alaska.
+          </p>
+          <a href="/captain/" class="service-link f6 fw6 gold no-underline">Learn More &rarr;</a>
+        </article>
+
+        {{/* Charter Card */}}
+        <article class="service-card bg-white pa4 br3">
+          <div class="service-icon mb3">
+            <img src="/images/link_charter.gif" alt="Charter" class="service-img">
+          </div>
+          <h3 class="service-title f4 fw6 navy mb2">Charter &mdash; MV Peregrine</h3>
+          <p class="service-desc f6 lh-copy mid-gray mb3">
+            An ultimate adventure you will never forget. Explore the Pacific Northwest,
+            Inside Passage, and Southeast Alaska aboard our expedition yacht.
+          </p>
+          <a href="/charter/" class="service-link f6 fw6 gold no-underline">Learn More &rarr;</a>
+        </article>
+
+        {{/* Vessel Management Card */}}
+        <article class="service-card bg-white pa4 br3">
+          <div class="service-icon mb3">
+            <img src="/images/link_manage.gif" alt="Vessel Management" class="service-img">
+          </div>
+          <h3 class="service-title f4 fw6 navy mb2">Vessel Management</h3>
+          <p class="service-desc f6 lh-copy mid-gray mb3">
+            Maintain your vessel in ready-to-depart condition at practical costs.
+            Comprehensive management from routine maintenance to major refits.
+          </p>
+          <a href="/management/" class="service-link f6 fw6 gold no-underline">Learn More &rarr;</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  {{/* Contact CTA Section */}}
+  <section class="contact-cta-section pv5 pv6-l ph3 ph4-ns bg-navy tc">
+    <div class="mw7 center">
+      <h2 class="f3 f2-l fw6 white mb3">Ready to Get Started?</h2>
+      <p class="f5 f4-l white-80 lh-copy mb4">
+        Contact us today for a consultation about your maritime service needs.
+      </p>
+      <div class="contact-info white-90 mb4">
+        <p class="f5 mb2"><strong>Phone:</strong> 619-405-5558</p>
+        <p class="f5 mb2"><strong>Email:</strong> adam@yachtlogic.com</p>
+      </div>
+      <a href="/contact/" class="cta-button dib f5 fw6 ph4 pv3 no-underline br2">Contact Us &rarr;</a>
+    </div>
+  </section>
+{{ end }}
