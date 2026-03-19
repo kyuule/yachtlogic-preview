@@ -1,0 +1,29 @@
+{{ $featured_image := partial "func/GetFeaturedImage.html" . }}
+{{ if $featured_image }}
+  <header class="hero-section cover bg-center" style="background-image: url('{{ $featured_image }}');">
+    <div class="hero-overlay">
+      {{ partial "site-navigation.html" . }}
+      <div class="hero-content tc pv5 pv6-l ph3 ph4-ns">
+        {{ if not .Params.omit_header_text }}
+          {{ if .IsHome }}
+            <h1 class="hero-title white mb0">YACHT LOGIC</h1>
+            <p class="hero-subtitle white-90 mt3 mb2">Professional Maritime Services Since 1996</p>
+            <p class="hero-tagline white-80 mt2 mb4">Yacht delivery — Captain services — Charter — Vessel management</p>
+            <a href="/contact/" class="hero-cta dib ph4 pv3 white no-underline mt3">Request a Quote &rarr;</a>
+          {{ else }}
+            <h1 class="f2 f1-l fw6 white-90 mb0 lh-title">{{ .Title | default .Site.Title }}</h1>
+            {{ with .Params.description }}
+              <p class="fw3 f5 f4-l white-80 measure-wide-l center lh-copy mt3 mb0">{{ . }}</p>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </header>
+{{ else }}
+  <header>
+    <div class="nav-only">
+      {{ partial "site-navigation.html" . }}
+    </div>
+  </header>
+{{ end }}
