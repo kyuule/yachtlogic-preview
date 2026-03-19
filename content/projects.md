@@ -2,7 +2,6 @@
 title: "Past Projects"
 description: "Notable yacht deliveries, research vessel operations, and professional captain projects"
 featured_image: "/images/Elephant Island and Icebergs - IMG_4358 PS.jpg"
-menu: main
 weight: 6
 ---
 

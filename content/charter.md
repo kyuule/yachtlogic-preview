@@ -2,7 +2,6 @@
 title: "Charter — MV Peregrine"
 description: "Expedition yacht charters in the Pacific Northwest, Inside Passage, and Alaska"
 featured_image: "/images/P6290078.JPG"
-menu: main
 weight: 4
 ---
 

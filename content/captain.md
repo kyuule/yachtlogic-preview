@@ -2,7 +2,6 @@
 title: "Professional Captain Service"
 description: "Licensed professional captains for short or long term hire - cruising, instruction, and expedition support"
 featured_image: "/images/Captkelly.jpg"
-menu: main
 weight: 3
 ---
 

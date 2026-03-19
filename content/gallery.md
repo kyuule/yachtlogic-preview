@@ -2,7 +2,6 @@
 title: "Photo Gallery"
 description: "Photos from yacht deliveries, expeditions, and adventures around the world"
 featured_image: "/images/Breakfast at sea.JPG"
-menu: main
 weight: 7
 ---
 

@@ -2,7 +2,6 @@
 title: "Yacht Delivery"
 description: "Professional yacht delivery service - power and sailing yachts delivered worldwide"
 featured_image: "/images/del10.jpg"
-menu: main
 weight: 2
 ---
 

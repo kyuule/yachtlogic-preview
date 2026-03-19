@@ -2,7 +2,6 @@
 title: "About Yacht Logic"
 description: "About Adam Jenkins and Yacht Logic - professional maritime services since 1996"
 featured_image: "/images/adam.jpg"
-menu: main
 weight: 8
 ---
 

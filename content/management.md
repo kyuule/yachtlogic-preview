@@ -2,7 +2,6 @@
 title: "Vessel Management"
 description: "Professional yacht management services - maintenance, refits, and operational support"
 featured_image: "/images/jada01.jpg"
-menu: main
 weight: 5
 ---
 

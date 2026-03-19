@@ -2,7 +2,6 @@
 title: "Contact Us"
 description: "Contact Yacht Logic for yacht delivery, captain services, charter, or vessel management"
 featured_image: "/images/front_top.gif"
-menu: main
 weight: 9
 type: "contact"
 ---

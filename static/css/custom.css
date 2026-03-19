@@ -1,0 +1,87 @@
+/* === Yacht Logic Custom Styles === */
+
+/* Hero: dark overlay so text is readable over bg.jpg */
+.cover-main {
+  position: relative;
+  background-size: cover !important;
+  background-position: center center !important;
+  min-height: 420px;
+}
+.cover-main::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,20,40,0.6) 0%, rgba(0,20,40,0.4) 100%);
+  z-index: 0;
+}
+.cover-main > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Site title in hero */
+.cover-main h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+  letter-spacing: 0.05em;
+}
+
+/* Tagline under title */
+.cover-main p {
+  font-size: 1.15rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Nav: single clean line */
+.site-navigation {
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+}
+.site-navigation a {
+  padding: 0 0.5rem;
+  white-space: nowrap;
+}
+
+/* Nav background — dark navy */
+header nav {
+  background-color: rgba(0, 25, 50, 0.9) !important;
+}
+
+/* Hide the old GIF logo if it's broken */
+img[src*="logo.gif"] {
+  display: none;
+}
+
+/* Services section on homepage */
+.content-section h3 {
+  color: #1a3a5c;
+  border-bottom: 2px solid #c8a84b;
+  padding-bottom: 0.25rem;
+}
+
+/* CTA button */
+.btn-primary {
+  background-color: #1a3a5c;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+.btn-primary:hover {
+  background-color: #c8a84b;
+  color: #1a3a5c;
+}
+
+/* Footer */
+footer {
+  background-color: #1a3a5c !important;
+  color: #ccc;
+}
+footer a { color: #c8a84b; }

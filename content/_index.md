@@ -1,7 +1,7 @@
 ---
 title: "Yacht Logic"
 description: "Professional yacht delivery, captain services, charter expeditions and vessel management since 1996"
-featured_image: "/images/front_top.gif"
+featured_image: "/images/bg.jpg"
 ---
 
 ## Professional Maritime Services Since 1996
